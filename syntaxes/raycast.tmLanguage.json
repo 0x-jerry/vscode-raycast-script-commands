@@ -21,19 +21,19 @@
               "name": "comment"
             },
             "1": {
-              "name": "punctuation.definition.block.tag.jsdoc"
+              "name": "keyword"
             },
             "2": {
-              "name": "variable.name"
+              "name": "variable.other.object.js"
             },
             "3": {
               "name": "punctuation.accessor.ts"
             },
             "4": {
-              "name": "entity.name.function"
+              "name": "variable.other.property.js"
             },
             "5": {
-              "name": "comment",
+              "name": "string",
               "patterns": [
                 {
                   "match": "\\b(compact|fullOutput|silent|inline)\\b",
@@ -54,22 +54,21 @@
               "name": "comment"
             },
             "1": {
-              "name": "punctuation.definition.block.tag.jsdoc"
+              "name": "keyword"
             },
             "2": {
-              "name": "variable.name"
+              "name": "variable.other.object.js"
             },
             "3": {
               "name": "punctuation.accessor.ts"
             },
             "4": {
-              "name": "entity.name.function"
+              "name": "variable.other.property.js"
             },
             "5": {
-              "name": "meta.embedded.block.json",
               "patterns": [
                 {
-                  "include": "source.json"
+                  "include": "source.js"
                 }
               ]
             }
