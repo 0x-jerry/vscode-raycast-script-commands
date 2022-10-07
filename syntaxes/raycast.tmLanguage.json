@@ -66,9 +66,10 @@
               "name": "variable.other.property.js"
             },
             "5": {
+              "name": "source.json",
               "patterns": [
                 {
-                  "include": "source.js"
+                  "include": "source.json"
                 }
               ]
             }
