@@ -2,7 +2,7 @@
   "name": "vscode-raycast-script-commands",
   "displayName": "Raycast Script Commands",
   "description": "",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.72.0"
   },
@@ -16,7 +16,7 @@
   "contributes": {
     "grammars": [
       {
-        "scopeName": "text.raycast",
+        "scopeName": "source.raycast.script",
         "path": "./syntaxes/raycast.tmLanguage.json",
         "injectTo": [
           "source.js",
@@ -27,7 +27,7 @@
           "source.tsx"
         ],
         "embeddedLanguages": {
-          "source.json": "json"
+          "meta.embedded.json": "json"
         }
       }
     ]

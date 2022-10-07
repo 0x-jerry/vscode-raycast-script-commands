@@ -1,18 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "scopeName": "text.raycast",
-  "injectionSelector": "L:source -comment -(string -meta.embedded)",
+  "scopeName": "source.raycast.script",
+  "injectionSelector": "L:source",
   "patterns": [
     {
-      "patterns": [
-        {
-          "include": "#document"
-        }
-      ]
+      "include": "#raycast"
     }
   ],
   "repository": {
-    "document": {
+    "raycast": {
       "patterns": [
         {
           "match": "^//\\s*(@)(raycast)(\\.)(schemaVersion|title|mode|packageName|icon|iconDark|currentDirectoryPath|needsConfirmation|refreshTime|author|authorURL|description)\\s+(.*)",
@@ -66,7 +62,7 @@
               "name": "variable.other.property.js"
             },
             "5": {
-              "name": "source.json",
+              "name": "meta.embedded.json",
               "patterns": [
                 {
                   "include": "source.json"
