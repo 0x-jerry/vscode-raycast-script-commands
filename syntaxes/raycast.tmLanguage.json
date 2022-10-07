@@ -1,0 +1,81 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "scopeName": "text.raycast",
+  "injectionSelector": "L:source -comment -(string -meta.embedded)",
+  "patterns": [
+    {
+      "patterns": [
+        {
+          "include": "#document"
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "document": {
+      "patterns": [
+        {
+          "match": "^//\\s*(@)(raycast)(\\.)(schemaVersion|title|mode|packageName|icon|iconDark|currentDirectoryPath|needsConfirmation|refreshTime|author|authorURL|description)\\s+(.*)",
+          "captures": {
+            "0": {
+              "name": "comment"
+            },
+            "1": {
+              "name": "punctuation.definition.block.tag.jsdoc"
+            },
+            "2": {
+              "name": "variable.name"
+            },
+            "3": {
+              "name": "punctuation.accessor.ts"
+            },
+            "4": {
+              "name": "entity.name.function"
+            },
+            "5": {
+              "name": "comment",
+              "patterns": [
+                {
+                  "match": "\\b(compact|fullOutput|silent|inline)\\b",
+                  "captures": {
+                    "0": {
+                      "name": "keyword"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match": "^//\\s*(@)(raycast)(\\.)(argument[1-3])\\s+(.*)",
+          "captures": {
+            "0": {
+              "name": "comment"
+            },
+            "1": {
+              "name": "punctuation.definition.block.tag.jsdoc"
+            },
+            "2": {
+              "name": "variable.name"
+            },
+            "3": {
+              "name": "punctuation.accessor.ts"
+            },
+            "4": {
+              "name": "entity.name.function"
+            },
+            "5": {
+              "name": "meta.embedded.block.json",
+              "patterns": [
+                {
+                  "include": "source.json"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

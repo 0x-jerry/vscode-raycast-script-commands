@@ -1,0 +1,35 @@
+{
+  "name": "vscode-raycast-script-commands",
+  "displayName": "Raycast Script Commands",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "publisher": "fantasy",
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "raycast"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "text.raycast",
+        "path": "./syntaxes/raycast.tmLanguage.json",
+        "injectTo": [
+          "source.js",
+          "source.mjs",
+          "source.ts",
+          "source.mts",
+          "source.jsx",
+          "source.tsx"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.json": "json"
+        }
+      }
+    ]
+  }
+}
