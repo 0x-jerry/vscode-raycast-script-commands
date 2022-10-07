@@ -31,5 +31,20 @@
         }
       }
     ]
-  }
+  },
+  "devDependencies": {
+    "vsce": "^2.11.0"
+  },
+  "scripts": {
+    "pack": "vsce package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x-jerry/vscode-raycast-script-commands.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0x-jerry/vscode-raycast-script-commands/issues"
+  },
+  "homepage": "https://github.com/0x-jerry/vscode-raycast-script-commands#readme"
 }
