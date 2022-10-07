@@ -25,10 +25,7 @@
           "source.mts",
           "source.jsx",
           "source.tsx"
-        ],
-        "embeddedLanguages": {
-          "meta.embedded.block.json": "json"
-        }
+        ]
       }
     ]
   },
